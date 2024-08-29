@@ -1,10 +1,10 @@
 html{
-    background-color: rgb(49, 49, 49);
+    background-color: blueviolet;
 }
 .tit{
     font-size:11rem;
     margin-left: 20%;
-    color: blueviolet;
+    color: white;
     font-family: "Cinzel", serif;
 }
 .txt2{
@@ -22,7 +22,7 @@ html{
     padding: 30px;
     width:80%;
     margin-left: 7.5%;
-    background-color: rgba(187, 112, 227, 0.55);
+    background-color: black;
     border-radius: 5%;
 
 }

@@ -1,0 +1,115 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 16px;
+    background-color: blueviolet;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.img{
+    widht:300px;
+    height:300px;
+    border-radius: 50%;
+}
+:root{
+    --border-color: yellow;
+    --w-image: 300px;
+    --calculate: calc(3/2);
+
+}
+header{
+    display: grid;
+    grid-template-columns: 80px 1fr calc(var(--w-image)* var(--calculate));
+    grid-template-rows:80px ;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid var(--border-color);
+
+}
+header .logo img{
+    width: 80px;
+
+
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav a{
+    color: black;
+    font-weight: 400;
+
+}
+header nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+}
+header nav{
+    border-left: 1px solid var(--border-color);
+}
+.carousel{
+    margin-top: -80px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.carousel .list{
+    height: 100%;
+    position: relative;
+}
+.carousel .list::before{
+    position: absolute;
+    width: var(--w-image);
+    height: 100%;
+    content: '';
+    background-color: red;
+    top: 0;
+    left: calc(100% - calc(var(--w-image)* var(--calculate)));
+    border-left:  1px solid var(--border-color);
+    border-right:  1px solid var(--border-color);
+    z-index: 10;
+    pointer-events: none;
+
+
+}
+.carousel .list::after{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    content: '';
+    width: 400px;
+    height: 300px;
+    z-index: 10px;
+    pointer-events: none;
+    filter: blur(150px);
+    border-radius: 20px 50px 110px 230px;
+    opacity: .6;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
